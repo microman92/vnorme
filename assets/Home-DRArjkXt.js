@@ -1,1 +1,0 @@
-import{c as n,o as s}from"./index-BraZW19G.js";const _=(e,t)=>{const c=e.__vccOpts||e;for(const[o,r]of t)c[o]=r;return c},a={};function f(e,t){return s(),n("div")}const m=_(a,[["render",f]]);export{m as default};
