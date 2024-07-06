@@ -1,0 +1,32 @@
+$fonts: (
+  'CoFoSans': (
+    'Medium': 500,
+    'Regular': 400
+  ),
+  'Mulish': (
+    'Medium': 500,
+    'Regular': 400,
+    'Black': 900,
+    'Bold': 700,
+    'SemiBold': 600
+  ),
+  'Inter': (
+    'SemiBold': 500,
+    'Regular': 400
+  ),
+  'Roboto': (
+    'Bold': 500,
+    'Regular': 400
+  )
+);
+
+@each $font-family, $weights in $fonts {
+  @each $name, $weight in $weights {
+    @font-face {
+      font-family: '#{$font-family}';
+      src: url('@/assets/fonts/#{$font-family}-#{$name}.ttf');
+      font-style: normal;
+      font-weight: $weight;
+    }
+  }
+}
